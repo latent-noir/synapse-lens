@@ -1,0 +1,24 @@
+# ─── Default Experiment Configuration ────────────────────────────────────────
+# This file defines the baseline settings for all experiments.
+
+name: default
+
+data:
+  name: mnist
+  batch_size: 64
+  num_workers: 0
+  data_dir: ./data
+  augment: false
+
+model:
+  type: mlp
+  hidden_sizes: [256, 128]
+  dropout: 0.2
+
+training:
+  epochs: 10
+  learning_rate: 0.001
+  device: cpu
+  log_interval: 100
+  checkpoint_dir: checkpoints
+  save_best_only: true

@@ -1,0 +1,62 @@
+[build-system]
+requires = ["setuptools>=68.0", "wheel", "pybind11>=2.11"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "nnviz"
+version = "0.1.0"
+description = "Synapse Lens — real-time weight, gradient, and activation inspection."
+readme = "README.md"
+license = {text = "MIT"}
+requires-python = ">=3.10"
+authors = [
+    {name = "latent-noir"},
+]
+keywords = ["neural-network", "visualization", "pytorch", "deep-learning"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Science/Research",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: C++",
+]
+
+dependencies = [
+    "torch>=2.0",
+    "torchvision>=0.15",
+    "plotly>=5.0",
+    "dash>=2.0",
+    "numpy>=1.24",
+    "pyyaml>=6.0",
+    "rich>=13.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0",
+    "pytest-cov>=4.0",
+    "ruff>=0.1.0",
+    "mypy>=1.5",
+    "mkdocs-material>=9.0",
+]
+
+[project.scripts]
+nnviz-train = "scripts.train:main"
+nnviz-dashboard = "scripts.visualize:main"
+nnviz-benchmark = "scripts.benchmark:main"
+
+[tool.setuptools.packages.find]
+include = ["nnviz*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-v --tb=short"
+
+[tool.ruff]
+target-version = "py310"
+line-length = 100
+
+[tool.mypy]
+python_version = "3.10"
+warn_return_any = true
+warn_unused_configs = true

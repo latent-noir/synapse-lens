@@ -1,0 +1,23 @@
+# ─── MNIST Experiment Configuration ──────────────────────────────────────────
+# Tuned configuration for MNIST digit classification.
+
+name: mnist_experiment
+
+data:
+  name: mnist
+  batch_size: 128
+  num_workers: 2
+  data_dir: ./data
+  augment: true
+
+model:
+  type: cnn
+  dropout: 0.25
+
+training:
+  epochs: 20
+  learning_rate: 0.0005
+  device: cpu      # Change to 'cuda' if GPU available
+  log_interval: 50
+  checkpoint_dir: checkpoints/mnist
+  save_best_only: true

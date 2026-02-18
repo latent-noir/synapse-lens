@@ -1,0 +1,32 @@
+# ─── Network Intrusion Detection Experiment ─────────────────────────────────
+name: intrusion_detection
+
+data:
+  name: intrusion
+  source: synthetic         # 'synthetic' or path to CSV file
+  binary: true              # true = normal vs attack, false = 5-class
+  num_samples: 20000        # for synthetic mode only
+  num_features: 41
+  attack_ratio: 0.3
+  batch_size: 128
+  test_size: 0.2
+
+model:
+  type: anomaly_mlp
+  hidden_sizes: [128, 64, 32]
+  dropout: 0.3
+  activation: relu
+
+training:
+  epochs: 30
+  learning_rate: 0.001
+  optimizer: adam
+  weight_decay: 0.0001
+  device: cpu
+
+analysis:
+  confusion_matrix: true
+  classification_report: true
+  feature_importance: true
+  export_json: true
+  export_path: experiments/intrusion_results.json
