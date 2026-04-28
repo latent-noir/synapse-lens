@@ -176,5 +176,5 @@ For security vulnerability reporting, please refer to [SECURITY.md](SECURITY.md)
 ---
 
 <div align="center">
-  <sub>Built with ❤️ by the DeepMind Advanced Agentic Coding Team</sub>
+
 </div>
