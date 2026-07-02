@@ -2,7 +2,7 @@
 
 Thank you for your interest in contributing! We welcome bug reports, feature requests, and pull requests to improve the project.
 
-## 🛠️ Getting Started
+##  Getting Started
 
 1.  **Fork the repository** on GitHub.
 2.  **Clone your fork** locally:
@@ -19,7 +19,7 @@ Thank you for your interest in contributing! We welcome bug reports, feature req
     git checkout -b feature/my-awesome-feature
     ```
 
-## 🧪 Running Tests
+##  Running Tests
 
 Please ensure all tests pass before submitting a PR.
 
@@ -37,20 +37,20 @@ cmake --build .
 ctest --output-on-failure
 ```
 
-## 🎨 Code Style
+##  Code Style
 
 - **Python**: We follow [PEP 8](https://www.python.org/dev/peps/pep-0008/). Please run `black .` and `flake8` before committing.
 - **C++**: We follow the [Google C++ Style Guide](https://google.github.io/styleguide/cppguide.html).
 - **Docstrings**: All classes and functions should have Google-style docstrings.
 
-## 📝 Pull Request Guidelines
+##  Pull Request Guidelines
 
 1.  Provide a clear description of the problem and verify that your changes fix it.
 2.  Include unit tests for any new functionality.
 3.  Update documentation if applicable.
 4.  Keep PRs focused on a single change.
 
-## 🐛 Reporting Bugs
+##  Reporting Bugs
 
 Please open an issue on GitHub with:
 - A clear description of the bug.
@@ -58,6 +58,6 @@ Please open an issue on GitHub with:
 - Expected vs. actual behavior.
 - Environment details (OS, Python version, etc.).
 
-## 📜 License
+##  License
 
 By contributing, you agree that your contributions will be licensed under the MIT License.
