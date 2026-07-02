@@ -23,12 +23,12 @@ It features a **dual-engine architecture**:
 
 | Feature | Description |
 |---|---|
-| ** Interactive Dashboards** | Three interfaces: **Jupyter** (ipywidgets), **Web** (Dash), and **Desktop** (PyQt5). |
-| ** Gradient Flow** | Visualize gradient magnitude and distribution per layer to diagnose vanishing/exploding gradients. |
-| ** Heatmaps & Grids** | See weights and feature maps as heatmaps or image grids in real-time. |
-| ** Intrusion Detection** | Specialized support for NSL-KDD network intrusion detection with tabular anomaly models. |
-| ** C++ Acceleration** | Core operations offloaded to optimized C++17 for maximum performance. |
-| ** Advanced Analysis** | Confusion matrices, classification reports, weight evolution tracking, and JSON experiment export. |
+|  Interactive Dashboards | Three interfaces: **Jupyter** (ipywidgets), **Web** (Dash), and **Desktop** (PyQt5). |
+|  Gradient Flow | Visualize gradient magnitude and distribution per layer to diagnose vanishing/exploding gradients. |
+|  Heatmaps & Grids | See weights and feature maps as heatmaps or image grids in real-time. |
+|  Intrusion Detection | Specialized support for NSL-KDD network intrusion detection with tabular anomaly models. |
+|  C++ Acceleration | Core operations offloaded to optimized C++17 for maximum performance. |
+|  Advanced Analysis | Confusion matrices, classification reports, weight evolution tracking, and JSON experiment export. |
 
 ---
 
