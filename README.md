@@ -1,4 +1,4 @@
-# 🧠 Synapse Lens
+# Synapse Lens
 
 > **A production-grade, dual-engine neural network inspection platform.**
 > *Real-time weight visualization, gradient flow analysis, and intrusion detection powered by PyTorch and C++.*
@@ -11,7 +11,7 @@
 
 ---
 
-## 🚀 Overview
+##  Overview
 
 **Synapse Lens** is a comprehensive toolset designed for researchers and engineers who need deep insights into their models. Unlike standard training loggers, this system provides **real-time, interactive visualization** of internal network states—weights, gradients, activations, and feature maps.
 
@@ -23,16 +23,16 @@ It features a **dual-engine architecture**:
 
 | Feature | Description |
 |---|---|
-| **👀 Interactive Dashboards** | Three interfaces: **Jupyter** (ipywidgets), **Web** (Dash), and **Desktop** (PyQt5). |
-| **📉 Gradient Flow** | Visualize gradient magnitude and distribution per layer to diagnose vanishing/exploding gradients. |
-| **🔥 Heatmaps & Grids** | See weights and feature maps as heatmaps or image grids in real-time. |
-| **🛡️ Intrusion Detection** | Specialized support for NSL-KDD network intrusion detection with tabular anomaly models. |
-| **⚡ C++ Acceleration** | Core operations offloaded to optimized C++17 for maximum performance. |
-| **📊 Advanced Analysis** | Confusion matrices, classification reports, weight evolution tracking, and JSON experiment export. |
+| ** Interactive Dashboards** | Three interfaces: **Jupyter** (ipywidgets), **Web** (Dash), and **Desktop** (PyQt5). |
+| ** Gradient Flow** | Visualize gradient magnitude and distribution per layer to diagnose vanishing/exploding gradients. |
+| ** Heatmaps & Grids** | See weights and feature maps as heatmaps or image grids in real-time. |
+| ** Intrusion Detection** | Specialized support for NSL-KDD network intrusion detection with tabular anomaly models. |
+| ** C++ Acceleration** | Core operations offloaded to optimized C++17 for maximum performance. |
+| ** Advanced Analysis** | Confusion matrices, classification reports, weight evolution tracking, and JSON experiment export. |
 
 ---
 
-## 🏗️ Architecture
+##  Architecture
 
 The project follows a modular, layered architecture designed for extensibility and performance.
 
@@ -62,7 +62,7 @@ See [ARCHITECTURE.md](ARCHITECTURE.md) for the full technical design document.
 
 ---
 
-## � Installation
+##  Installation
 
 ### Prerequisites
 - Python ≥ 3.10
@@ -93,10 +93,10 @@ cd ..
 
 ---
 
-## 🚦 Usage
+##  Usage
 
 ### 1. Desktop GUI (PyQt5)
-The most powerful interface, featuring a tabbed MVC design for training, visualization, and model comparison.
+The interface, featuring a tabbed MVC design for training, visualization, and model comparison.
 
 ```bash
 # Launch the standalone GUI
@@ -135,18 +135,18 @@ python -m nnviz.analysis.compare_architectures --models mlp,cnn,anomaly_mlp
 
 ---
 
-## 📊 Features in Detail
+##  Features in Detail
 
-### 🔍 Weight & Gradient Analysis
+###  Weight & Gradient Analysis
 - **Weight Evolution**: Track how weight distributions change over epochs (mean, std, L2 norm).
 - **Gradient Histograms**: Detect dead neurons or saturating gradients instantly.
 
-### �️ Network Intrusion Detection
+###  Network Intrusion Detection
 - Built-in support for **NSL-KDD** and synthetic intrusion datasets.
 - **AnomalyMLP**: specialized architecture with Batch Normalization for tabular anomaly detection.
 - **Confusion Matrix**: Real-time evaluation of detection performance (Normal, DoS, Probe, R2L, U2R).
 
-### ⚡ C++ Core Engine
+###  C++ Core Engine
 - **`Matrix`**: Custom high-performance matrix class with operator overloading.
 - **`DenseLayer`**: Optimized forward/backward propagation.
 - **`Loss`**: Numerical stable MSE and Cross-Entropy implementations.
@@ -154,22 +154,22 @@ python -m nnviz.analysis.compare_architectures --models mlp,cnn,anomaly_mlp
 
 ---
 
-## 🤝 Contributing
+##  Contributing
 
 We welcome contributions! Please see [CONTRIBUTING.md](CONTRIBUTING.md) for details on:
-- 🛠️ Setting up the dev environment
-- 🧪 Running tests (Python + C++)
-- 🎨 Code style guidelines
+-  Setting up the dev environment
+-  Running tests (Python + C++)
+-  Code style guidelines
 
 ---
 
-## � License
+##  License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ---
 
-## 🔒 Security
+##  Security
 
 For security vulnerability reporting, please refer to [SECURITY.md](SECURITY.md).
 
