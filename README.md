@@ -1,4 +1,4 @@
-# Synapse Lens
+# 🧠🔍 Synapse Lens — Model Inspector
 
 > **A production-grade, dual-engine neural network inspection platform.**
 > *Real-time weight visualization, gradient flow analysis, and intrusion detection powered by PyTorch and C++.*
@@ -73,8 +73,8 @@ See [ARCHITECTURE.md](ARCHITECTURE.md) for the full technical design document.
 
 ```bash
 # Clone the repository
-git clone https://github.com/your-username/neural-network-visualizer.git
-cd neural-network-visualizer
+git clone https://github.com/your-username/synapse-lens.git
+cd synapse-lens
 
 # Install in editable mode with all dependencies
 pip install -e ".[dev]"
